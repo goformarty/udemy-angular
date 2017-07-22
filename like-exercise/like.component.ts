@@ -3,11 +3,10 @@ export class LikeComponent {
   onClick(){
     if(this.isSelected) {
       this.likesCount --;
-      this.isSelected = false;
     }
     else {
       this.likesCount ++;
-      this.isSelected = true; 
     }
+    this.isSelected = !this.isSelected;
   }
 }
